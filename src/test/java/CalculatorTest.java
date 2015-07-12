@@ -19,7 +19,6 @@ public class CalculatorTest {
         Assert.assertEquals(6, sum);
     }
 
-    @Ignore("classUnderTest is not initialized yet")
     @Test
     public void testSubtraction() throws Exception {
         int sum = classUnderTest.summingUp("1-2-3");
