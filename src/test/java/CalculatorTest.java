@@ -24,7 +24,6 @@ public class CalculatorTest {
         Assert.assertEquals(-4, sum);
     }
 
-    @Ignore("Division by zero exception")
     @Test
     public void testDivision() throws Exception {
         double division = classUnderTest.division("9:3:1:0");
