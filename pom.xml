@@ -8,5 +8,24 @@
     <artifactId>junit_flp</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <junit.version>4.10</junit.version>
+    </properties>
+
+    <dependencies>
+        <!--<dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>-->
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>@{junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
 </project>
