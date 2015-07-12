@@ -9,13 +9,12 @@ public class CalculatorTest {
 
     @Before
     public void setUp() throws Exception {
-
+        classUnderTest = new Calculator();
     }
 
     @Test
     public void testSummingUp() throws Exception {
-        Calculator calculator = new Calculator();
-        int sum = calculator.summingUp("1+2+3");
+        int sum = classUnderTest.summingUp("1+2+3");
         Assert.assertEquals(6, sum);
     }
 
