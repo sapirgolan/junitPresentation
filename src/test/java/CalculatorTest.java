@@ -20,7 +20,7 @@ public class CalculatorTest {
 
     @Test
     public void testSubtraction() throws Exception {
-        int sum = classUnderTest.summingUp("1-2-3");
+        int sum = classUnderTest.subtraction("1-2-3");
         Assert.assertEquals(-4, sum);
     }
 
