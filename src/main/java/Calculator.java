@@ -11,10 +11,19 @@ public class Calculator {
     }
 
     public int subtraction(String expression) {
-        int sum = 0;
-        for (String summand: expression.split("\\-"))
-            sum -= Integer.valueOf(summand);
-        return sum;
+        int subtract = 0;
+        boolean firstElementExists = false;
+
+        for (String digit: expression.split("\\-")) {
+            Integer number = Integer.valueOf(digit);
+            if (firstElementExists) {
+                subtract -= number;
+            } else {
+                subtract = number;
+                firstElementExists = true;
+            }
+        }
+        return subtract;
     }
 
     public double division(String expression) {
