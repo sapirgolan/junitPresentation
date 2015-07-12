@@ -24,7 +24,7 @@ public class CalculatorTest {
         Assert.assertEquals(-4, sum);
     }
 
-    @Test
+    @Test (expected=IllegalArgumentException.class)
     public void testDivision() throws Exception {
         double division = classUnderTest.division("9:3:1:0");
         Assert.assertEquals(3.0, division, 0.00001);
