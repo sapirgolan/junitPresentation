@@ -43,4 +43,15 @@ public class Calculator {
         }
         return result;
     }
+
+    public int operation(String expression) {
+        StringBuilder builder = new StringBuilder();
+        for (String ex : expression.split("\\;")) {
+            int summingUp = this.summingUp(ex);
+            builder.append(summingUp);
+            builder.append("+");
+        }
+        builder.deleteCharAt(builder.length() - 1);
+        return this.summingUp(builder.toString());
+    }
 }
